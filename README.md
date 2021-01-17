@@ -25,3 +25,9 @@ the output for the analysis was shown below
 
 ## Election-Audit Summary
 1. We can modify the script for line 52 and 55
+
+![Example_1](Resources/Example_1.png)
+
+Instead of type the column number directly to get the candidate name and county name, we can use the header row to determine the column numebr. Even if the order of the column change in other election, the script can still adapt the change and get the value from the right column.
+
+2. 
