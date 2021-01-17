@@ -30,4 +30,20 @@ the output for the analysis was shown below
 
 Instead of type the column number directly to get the candidate name and county name, we can use the header row to determine the column numebr. Even if the order of the column change in other election, the script can still adapt the change and get the value from the right column.
 
-2. 
+2. We also need to consider the case when there are more than one candidate/county with the exactly same number of votes.
+
+![Example_2](Resources/Example_2.png)
+
+In the if statement, we need to add a situtation that vote == winning_count.
+```python
+if (votes > winning_count) and (vote_percentage > winning_percentage):
+    winning_count = votes
+    winning_candidate = candidate_name
+    winning_percentage = vote_percentage
+# if the vote number is equal to the current winning count, the result will be tied
+elif (votes == winning_count) and (vote_percentage == winning_percentage) and (candidate_name <> winning_candidate):
+    winning_candidate = "tied"
+    winning_count = votes
+    winning_percentage = vote_percentage   
+``` 
+
