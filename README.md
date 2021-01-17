@@ -19,7 +19,8 @@ The purpose of this analysis is to use python to determine the winner candidate 
 - Diana Degettes won the election, she has 272892 votes and had 74.8% of the total votes.
 
 the output for the analysis was shown below
-![Deliverable_2]()
+
+![Deliverable_2](Resources/Deliverable_2.png)
 
 
 ## Election-Audit Summary
