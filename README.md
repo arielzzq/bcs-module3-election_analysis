@@ -24,3 +24,4 @@ the output for the analysis was shown below
 
 
 ## Election-Audit Summary
+1. We can modify the script for line 52 and 55
